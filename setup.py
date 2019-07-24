@@ -18,7 +18,6 @@ def spacy_download_en():
 
 class Install(_install):
     def run(self):
-        _install.do_egg_install(self)
         spacy_download_en()
         _install.run(self)
 
